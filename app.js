@@ -11,6 +11,12 @@ const req = unirest("GET", "https://bravenewcoin-v1.p.rapidapi.com/convert");
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
+//Redirect
+console.log('Api');
+app.get('/', function(req, res){
+    res.redirect('/api');
+ });
+
 // generica
 app.get('*',(req,res) => res.json({message: "Hello world"}));
 
