@@ -1,11 +1,12 @@
+module.exports =
 {
   "development": {
-    "username": "admin",
-    "password": "admin1234",
-    "database": "app-plink-aws",
-    "host": "plink.cg509j9qwnkn.us-east-1.rds.amazonaws.com",
+    "username": process.env.username,
+    "password": process.env.password,
+    "database": process.env.database,
+    "host": process.env.host,
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": 0
   },
   "test": {
     "username": "root",
@@ -13,7 +14,7 @@
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": 0
   },
   "production": {
     "username": "root",
@@ -21,6 +22,6 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": 0
   }
 }
