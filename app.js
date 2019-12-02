@@ -36,8 +36,9 @@ app.post('/api/login', async (req, res) => { //Login
     } 
     let validUser = await getUser(data, req, res);
     let token = jwt.sign(validUser, config.jwtKey, { expiresIn: '1h' }, (err, token) =>{
-        if(err)
-            res.json({mensaje: err})
+        if(err){
+            return res.json({mensaje: err})
+        }
         res.json({
             token: token
         })
