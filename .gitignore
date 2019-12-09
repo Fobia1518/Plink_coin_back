@@ -45,6 +45,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+config/config.js.dllo
+out/
 
 # Optional npm cache directory
 .npm

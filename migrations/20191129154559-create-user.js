@@ -14,10 +14,10 @@ module.exports = {
       apellido: {
         type: Sequelize.STRING
       },
-      contrasena: {
+      username: {
         type: Sequelize.STRING
       },
-      username: {
+      contrasena: {
         type: Sequelize.STRING
       },
       monedaPrefe: {
