@@ -1,5 +1,14 @@
 # Plink_coin_back
 
+- Node.JS v12
+- Sequelize
+- AWS RDS
+- MYSQL
+
+## Install
+
+`$ npm install`
+
 ---
 
 ## DEMO
